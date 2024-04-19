@@ -1,91 +1,105 @@
-%
-% Authors: Iñaki Lorente
-%
+%!Tex TS-program = pdflatex
 
-%=================================
-%     CONFIGURATION
-%=================================
-% Class info
-% bookest: \part{}
-%		   \chapter{} 
-%		   \section{}
-%		   \subsection{}
-%		   \subsubsection{}
-%		   \paragraph{} 
-%		   \subparagraph{}
-\documentclass[oneside]{bookest}
-\usepackage{geometry}
-\geometry{left=2cm,right=2cm, top=1cm, bottom=2cm} 
-\usepackage[toc]{appendix}
-\usepackage{titletoc}
-\usepackage{tocloft}
+\documentclass[11pt, aspectratio=169]{beamer}
+\usepackage{templates/beamerthemeICube}
 
-% Document variables
-\renewcommand{\thechapter}{}
-\newcommand{\sectiondir}{sections/}
+\usepackage[export]{adjustbox}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{amssymb}
+\usepackage{xmpmulti}
 
-% Colours
-\definecolor{light_blue}{RGB}{120, 203, 225}
-\definecolor{dark_blue}{RGB}{49, 101, 128}
+\usepackage{graphicx}
+\graphicspath{{figures/},{logos/}}
 
 
-% Style
-\usepackage{fancyhdr}  
-\usepackage{blindtext}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
-\fancyhf{}
-\fancypagestyle{plain}{
-    \renewcommand{\headrulewidth}{0pt}
-    \renewcommand{\footrulewidth}{0.4pt}
-    \fancyfoot[R]{\thepage}
-    \fancyfoot[C]{\textbf{iggy} \color{dark_blue}{\textbf{penguin}}}
-}
-\pagestyle{plain}{
-    \renewcommand{\headrulewidth}{0pt}
-    \renewcommand{\footrulewidth}{0.4pt}
-    \fancyfoot[R]{\thepage}
-    \fancyfoot[C]{\textbf{iggy} by \color{dark_blue}{\textbf{penguin}}}
+% Make links show up as coloured
+\hypersetup{
+  colorlinks = true,
+  allcolors = black,
+  urlcolor = blue,
 }
 
-% Remove hiperlink borders
-\hypersetup{%
-    pdfborder = {0 0 0}
+\newcommand{\fullframeimage}[1]{
+	\begin{center}%
+		\includegraphics[max width = \textwidth, max height=0.8\textheight]{#1}%
+	\end{center}
 }
 
-%=================================
-%     EXTRA PACKAGES
-%=================================
-\usepackage{import}
-\usepackage{mathptmx}
-\usepackage{helvet}
-\usepackage{wallpaper}
-\usepackage{color}
-\usepackage[final]{pdfpages}
-\usepackage{setspace}
-\usepackage{fancyvrb}
+%\let\emph\relax % there's no \RedeclareTextFontCommand
+\DeclareTextFontCommand{\emph}{\color{slide-color}}
+
+\colorlet{slide-color}{unistra}
 
 
-%====================================================
-%------------------ BEGIN DOCUMENT ------------------
-%====================================================
+\title{Title}
+\subtitle{Something for XYZ 2009}
+\author{auteur}
+\institute{Plateforme Imagerie, Robotique et Innovation en Santé}
+\date{DDth Month YYYY}
+
+% You can add any logos you like by uploading them into the logos folder and replacing the blank image here
+\titleimage{image_fond.png}
+\titlelogoa{unistra/signature-universite-minimale-couleur_03.png}
+\titlelogob{cnrs/LOGO_CNRS_BLEU.png}
+\titlelogoc{insa_strasbourg/Logo_INSAvilleStrasbourgCourt-pantone_marge.jpg}
+\titlelogod{inria/inr_logo_rouge.png}
+\titlelogoe{engees/ENGEES_CMJN_png.png}
+%\titlelogoa{belle2-logo}
+%\titlelogob{bmbf}
+%\titlelogoc{blank}
+
+
+% Bibliography
+% Uncomment and upload your own references if you so please.
+% \usepackage[citestyle=authoryear,bibstyle=numeric,hyperref,backend=biber]{biblatex}
+% \addbibresource{references.bib}
+% \bibhang1em
+
 \begin{document}
 
-% (1) COVER
-\import{\sectiondir}{Cover}
-\maketitle
+\selectlanguage{french}
 
-\frontmatter
-% (2) TOC
-\tableofcontents
-\thispagestyle{empty}
-\mainmatter
+\frame{\titlepage}
 
-% (3) SECTIONS
-\onehalfspacing % (package setspace)
-\import{\sectiondir}{Intro}
-\import{\sectiondir}{Activities}
+% One way to make a slide
+\begin{frame}
+    \frametitle{Example slide 1}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+
+            \begin{itemize}
+                \item Look a these points
+                \item Another great point
+                \item This point is so great
+                      \begin{itemize}
+                          \item It needed it's own
+                          \item Sub points
+                      \end{itemize}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+
+            \begin{block}{Green means go}
+                \begin{itemize}
+                    \item
+                          These must be super important points
+                    \item
+                          They're inside a box
+                \end{itemize}
+            \end{block}
+
+        \end{column}
+    \end{columns}
+
+    \vfill
+    \begin{figure}
+        \centering
+        {\def\svgwidth{0.7\textwidth}\footnotesize\input{figures/standard_BelleII_decay.pdf_tex}}
+        \caption{Hehe particles go BRRRR}
+        \label{fig:my_label}
+    \end{figure}
+\end{frame}
 
 \end{document}

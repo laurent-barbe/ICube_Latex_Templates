@@ -1,0 +1,83 @@
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'standard_BelleII_decay.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{494.59208679bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.28232452)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.24953897,0.86606155){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{standard_BelleII_decay.pdf}}%
+    \put(0.10406555,0.15085401){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Upsilon(4S)$\end{tabular}}}}%
+    \put(0.03259253,0.17361216){\color[rgb]{0,0.43921569,0.75294118}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$e^-$\end{tabular}}}}%
+    \put(0.00305304,0.1248447){\color[rgb]{0,0.43921569,0.75294118}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$7$ GeV\end{tabular}}}}%
+    \put(0.30665673,0.20414237){\color[rgb]{0,0.69019608,0.31372549}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\bar{B}^0$\end{tabular}}}}%
+    \put(0.30665673,0.09107142){\color[rgb]{1,0,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B^0$\end{tabular}}}}%
+    \put(0.53822129,0.12950309){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\bar{D}^0$\end{tabular}}}}%
+    \put(0.71256706,0.02505338){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\nu_{\mu}$\end{tabular}}}}%
+    \put(0.80676792,0.12438668){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pi^-$\end{tabular}}}}%
+    \put(0.82439707,0.0921073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K^+$\end{tabular}}}}%
+    \put(0.81921826,0.06175337){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pi^-$\end{tabular}}}}%
+    \put(0.78756968,0.02933721){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mu^+$\end{tabular}}}}%
+    \put(0.38492323,0.02100155){\color[rgb]{0.03921569,0.30196078,0.61960784}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta_z \sim 130 \mu m$\end{tabular}}}}%
+    \put(0.73560012,0.26696306){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mu^+$\end{tabular}}}}%
+    \put(0.67659795,0.22937528){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mu^-$\end{tabular}}}}%
+    \put(0.49123309,0.25479017){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$J / \Psi$\end{tabular}}}}%
+    \put(0.80321262,0.21123005){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_S$\end{tabular}}}}%
+    \put(0.95592117,0.14939118){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pi^-$\end{tabular}}}}%
+    \put(0.95985261,0.19575657){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pi^+$\end{tabular}}}}%
+    \put(0.20881857,0.17288429){\color[rgb]{0.9372549,0.47843137,0.14117647}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$e^+$\end{tabular}}}}%
+    \put(0.18758895,0.12411683){\color[rgb]{0.9372549,0.47843137,0.14117647}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$4$ GeV\end{tabular}}}}%
+    \put(0.00748093,0.03604425){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Boost factor $\beta \gamma = 0.28$\end{tabular}}}}%
+    \put(0.04969752,0.09007666){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sqrt{s} = 10.58$ GeV\end{tabular}}}}%
+    \put(0.0066167,0.00766809){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}($0.425$ at Belle)\end{tabular}}}}%
+    \put(0.45500273,0.43930554){\makebox(0,0)[lt]{\begin{minipage}{0.70319891\unitlength}\raggedright \end{minipage}}}%
+  \end{picture}%
+\endgroup%
