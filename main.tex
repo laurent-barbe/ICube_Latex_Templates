@@ -1,8 +1,14 @@
-%!Tex TS-program = pdflatex
 
-\documentclass[11pt, aspectratio=169]{beamer}
+\documentclass[11pt, aspectratio=43]{beamer}
 \usepackage{templates/beamerthemeICube}
+\usepackage{tikz}
+\usetikzlibrary{matrix}
 
+% Remove navigation bar
+\setbeamertemplate{navigation symbols}{}
+% Tikz package
+\usepackage{tikz}
+\usetikzlibrary{positioning}
 \usepackage[export]{adjustbox}
 \usepackage{booktabs}
 \usepackage{siunitx}
@@ -26,17 +32,31 @@
 	\end{center}
 }
 
+\newcommand{\ing}[1]{\includegraphics[width=2cm]{#1}}
+\tikzset{
+  % style for inserting images as nodes
+  img/.style={
+    text width=2cm,
+    %text height=2cm,                 %% don't use this
+    inner sep=0pt,     %% use this
+    outer sep=0pt,     %% and this
+    rectangle,
+    align=center,
+    draw,thick} % only for debugging..
+}
+
 %\let\emph\relax % there's no \RedeclareTextFontCommand
 \DeclareTextFontCommand{\emph}{\color{slide-color}}
 
 \colorlet{slide-color}{unistra}
 
 
-\title{Title}
-\subtitle{Subtitle}
-\author{auteur}
+\title{Laboratoire des sciences de l'ingénieur, de l'informatique et de l'imagerie}
+\subtitle{ICube, UMR 7357}
+\author{L. Barbé}
 \institute{Plateforme Imagerie, Robotique et Innovation en Santé}
 \date{\today}
+
 
 % You can add any logos you like by uploading them into the logos folder and replacing the blank image here
 \titleimage{image_fond.png}
@@ -60,47 +80,10 @@
 
 \selectlanguage{french}
 
-\frame{\titlepage}
+%\frame{\titlepage}
+\input{sections/page_titre.tex}
 
 % One way to make a slide
-\begin{frame}
-    \frametitle{Example slide 1}
-
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-
-            \begin{itemize}
-                \item Look a these points
-                \item Another great point
-                \item This point is so great
-                      \begin{itemize}
-                          \item It needed it's own
-                          \item Sub points
-                      \end{itemize}
-            \end{itemize}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-
-            \begin{block}{Green means go}
-                \begin{itemize}
-                    \item
-                          These must be super important points
-                    \item
-                          They're inside a box
-                \end{itemize}
-            \end{block}
-
-        \end{column}
-    \end{columns}
-
-    \vfill
-    \begin{figure}
-        \centering
-        {\def\svgwidth{0.7\textwidth}\footnotesize\input{figures/standard_BelleII_decay.pdf_tex}}
-        \caption{Hehe particles go BRRRR}
-        \label{fig:my_label}
-    \end{figure}
-\end{frame}
 
 
 \end{document}

@@ -1,0 +1,116 @@
+\begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+    % Background image
+    \node[above right, align=center,inner sep=0pt] at (current page.south west)
+    {
+        \includegraphics[width=0.95\paperwidth]{image_fond.png}
+    };
+        
+    % Title & Subtitle
+    \node
+    [
+        above=0.5cm,
+        align=left,
+        fill=unistra,
+        rounded corners,
+        inner xsep=15pt,
+        inner ysep=10pt,
+        minimum width=0.85\textwidth,
+        text width=0.8\textwidth,
+        fill opacity=0.7,
+        text opacity=1,
+        text=white
+    ] (title) at (current page.center)
+    {
+        \Large \textbf{\inserttitle }  \\[5pt]
+        \small \insertsubtitle
+    };
+    \node
+    [
+        below=0.5cm,
+        align=left,
+        fill=unistra,
+        rounded corners,
+        inner xsep=15pt,
+        inner ysep=10pt,
+        minimum width=0.7\textwidth,
+        text width=0.6\textwidth,
+        fill opacity=0.7,
+        text opacity=1,
+        text=white
+    ] (subtitle) at (title.south)
+    {
+        \large \insertinstitute  \\[5pt]
+    };
+    % Author 
+    \node[  below=0.5cm,        
+            align=left,
+            fill=unistra,
+            rounded corners,
+            inner xsep=15pt,
+            inner ysep=10pt,
+            minimum width=0.7\textwidth,
+            text width=0.6\textwidth,
+            fill opacity=0.7,
+            text opacity=1,
+            text=white
+    ] (author) at (subtitle.south){\insertauthor};
+    % Date
+    \node[below=0.5cm,             
+    align=left,
+    fill=unistra,
+    rounded corners,
+    inner xsep=15pt,
+    inner ysep=10pt,
+    minimum width=0.7\textwidth,
+    text width=0.6\textwidth,
+    fill opacity=0.7,
+    text opacity=1,
+    text=white] (date) at (author.south){\large \today};
+    % Logo
+
+     \node
+    [
+        below right =0.25cm and 0.5cm
+    ] at (current page.north west)
+    {
+         \includegraphics[height=1.5cm]{icube/icube-png.png}
+    };
+    \node
+    [
+        below left =0.25cm and 0.25cm
+    ] at (current page.north east)
+    {
+        \includegraphics[height=0.6cm]{inria/inr_logo_rouge.png}
+    };
+    \node
+    [
+        below left =0.25cm and 2.2cm
+    ] at (current page.north east)
+    {
+        \includegraphics[height=0.6cm]{engees/ENGEES_CMJN_png.png}
+    };
+    \node
+    [
+        below left =0.25cm and 3.5cm
+    ] at (current page.north east)
+    {
+        \includegraphics[height=0.6cm]{insa_strasbourg/Logo_INSAvilleStrasbourgCourt-pantone_marge.jpg}
+    };
+    \node
+    [
+        below left =0.25cm and 5.0cm
+    ] at (current page.north east)
+    {
+        \includegraphics[height=0.6cm]{cnrs/LOGO_CNRS_BLEU.png}
+    };
+    \node
+    [
+        below left =0.25cm and 6cm
+    ] at (current page.north east)
+     {
+         \includegraphics[height=0.6cm]{unistra/signature-universite-minimale-couleur_03.png}
+    };
+    \end{tikzpicture}
+    %\titlelogoe{}
+\end{frame}
