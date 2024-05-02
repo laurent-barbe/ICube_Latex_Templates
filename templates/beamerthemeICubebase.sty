@@ -30,7 +30,25 @@
 
 \useinnertheme{rounded}
 \usepackage{templates/beamercolorthemeICube}
+\setbeamertemplate{footline}{%
+  \includegraphics[width=.1\textwidth]{logos/icube/icube-png.png}%
+  \hfill%
+  \usebeamercolor[fg]{page number in head/foot}%
+  \usebeamerfont{page number in head/foot}%
+  \insertframenumber\,/\,\inserttotalframenumber\kern1em%
+}
+\newcommand{\titleframe}{
+    \usebackgroundtemplate{
+        \includegraphics[width=\paperwidth,height=\paperheight]
+            {img/i_like_icube.png}
+    }
+    \frame{\titlepage}
+    \usebackgroundtemplate{
+       \includegraphics[width=\paperwidth,height=\paperheight]
+           {img/i_like_icube.png}
+  }
 
+}
 % Navigationsleiste ausblenden
 \beamertemplatenavigationsymbolsempty 
 
@@ -38,35 +56,35 @@
 \beamer@compresstrue
 
 %title image and logo
-\def\titleimage#1{\def\@titleimage{#1}}
-\def\titlelogoa#1{\def\@titlelogoa{#1}}
-\def\titlelogob#1{\def\@titlelogob{#1}}
-\def\titlelogoc#1{\def\@titlelogoc{#1}}
-\def\titlelogod#1{\def\@titlelogod{#1}}
-\def\titlelogoe#1{\def\@titlelogoe{#1}}
+% \def\titleimage#1{\def\@titleimage{#1}}
+% \def\titlelogoa#1{\def\@titlelogoa{#1}}
+% \def\titlelogob#1{\def\@titlelogob{#1}}
+% \def\titlelogoc#1{\def\@titlelogoc{#1}}
+% \def\titlelogod#1{\def\@titlelogod{#1}}
+% \def\titlelogoe#1{\def\@titlelogoe{#1}}
 
-\titleimage{bauplan}
-\titlelogoa{sdq_logo}
-\titlelogob{sdq_logo}
-\titlelogoc{sdq_logo}
-\titlelogod{sdq_logo}
-\titlelogoe{sdq_logo}
+% \titleimage{bauplan}
+% \titlelogoa{sdq_logo}
+% \titlelogob{sdq_logo}
+% \titlelogoc{sdq_logo}
+% \titlelogod{sdq_logo}
+% \titlelogoe{sdq_logo}
 
 %CH: Unistra-point
-\setbeamertemplate{itemize items}{
-\begin{pgfpicture}{0mm}{0mm}{1ex}{1ex}
-{\pgfsetcornersarced{\pgfpoint{.3ex}{.3ex}} 
-\pgfpathmoveto{\pgfpoint{0cm}{1ex}} 
-\pgfpathlineto{\pgfpoint{1ex}{1ex}}
-\pgfpathlineto{\pgfpoint{1ex}{0cm}}}
-{\pgfsetcornersarced{\pgfpoint{.3ex}{.3ex}}
-\pgfpathmoveto{\pgfpoint{1ex}{0cm}}
-\pgfpathlineto{\pgfpointorigin}
-\pgfpathlineto{\pgfpoint{0cm}{1ex}}}
-\color{unistra-light}
-\pgfusepath{fill}
-\end{pgfpicture}%
-}
+% \setbeamertemplate{itemize items}{
+% \begin{pgfpicture}{0mm}{0mm}{1ex}{1ex}
+% {\pgfsetcornersarced{\pgfpoint{.3ex}{.3ex}} 
+% \pgfpathmoveto{\pgfpoint{0cm}{1ex}} 
+% \pgfpathlineto{\pgfpoint{1ex}{1ex}}
+% \pgfpathlineto{\pgfpoint{1ex}{0cm}}}
+% {\pgfsetcornersarced{\pgfpoint{.3ex}{.3ex}}
+% \pgfpathmoveto{\pgfpoint{1ex}{0cm}}
+% \pgfpathlineto{\pgfpointorigin}
+% \pgfpathlineto{\pgfpoint{0cm}{1ex}}}
+% \color{unistra-light}
+% \pgfusepath{fill}
+% \end{pgfpicture}%
+% }
 
 %%% use this for setting the total page number
 %\newcommand{\beginbackup}{
